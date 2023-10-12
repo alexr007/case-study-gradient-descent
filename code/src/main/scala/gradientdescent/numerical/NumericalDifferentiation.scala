@@ -17,8 +17,9 @@
 package gradientdescent.numerical
 
 object NumericalDifferentiation {
+  
   def differentiate(h: Double)(
       f: Double => Double
-  ): Double => Double =
-    ???
+  ): Double => Double = x => (f(x + h) - f(x)) / h
+    
 }

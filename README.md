@@ -9,3 +9,23 @@ This case study looks at gradient descent, and the application of gradient desce
 - automatic differentiation.
 
 [See the site for everything.](https://creativescala.github.io/case-study-gradient-descent)
+
+## steps to run:
+
+### 1. generate CSS
+
+```shell
+npx tailwindcss -i docs/css/creative-scala.css -o site/target/mdoc/creative-scala.css
+```
+
+### 2. compile + run web server
+
+```shell
+sbt docs/tlSitePreview
+```
+
+### 3. open site served in the browser
+
+```shell
+open http://localhost:4242
+```
